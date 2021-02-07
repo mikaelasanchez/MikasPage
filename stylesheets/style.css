@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-image: url(kiminonawa.png);
+    background-image: url(../img/kiminonawa.png);
     background-position: center center;
     background-size: cover;
     border-radius: 20px;
@@ -73,7 +73,7 @@ footer {
 }
 
 button{
-    color: #000;
+    color: #000000;
     border: none;
     padding: 8px 12px;
     background-color: #f1f1f1;

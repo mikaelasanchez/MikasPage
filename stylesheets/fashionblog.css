@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap");
+
+body {
+    background-color: gainsboro;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+header {
+    position: relative;
+    background-image: url("./img/banner.jpeg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 300px;
+    text-shadow: 2px 2px 4px #000000;
+    filter: drop-shadow(0px 5px 5px #888888);
+    margin: 0;
+}
+#header-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+}
+#profile-image{
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(0px 5px 5px black);
+}
+
+main {
+    padding: 10px 10% 5%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 20px 10%;
+    filter: drop-shadow(0px 5px 5px #888888);
+}
+
+#blog-photo-container {  /* allows image to be cropped */
+    height: 300px;
+    overflow: hidden;
+}
+#blog-photo {
+    height: 300px;
+
+}
+
+#intro {
+    text-align: center;
+}
+
+hr.divider {
+    border-top: 3px dotted gainsboro;
+    border-bottom: 0 none;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: #9b9b9b;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: justify;
+}
