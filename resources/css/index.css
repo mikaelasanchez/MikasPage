@@ -1,33 +1,33 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&family=Roboto+Condensed:wght@300&display=swap');
+
+/* Styles */
 body {
-    background-color: #FFFFFF;
+    background-color: #363739;
     margin: 0;
-    padding: 50px;
+    padding: 25px 50px;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 header {
-    background-image: url(../img/kiminonawa.png);
-    background-position: center center;
-    background-size: cover;
-    border-radius: 20px;
-    height: 250px;
+    padding: 10px 10px 80px;
     width: 100%;
     text-align: center;
-    text-shadow: 2px 2px 4px #000000
 }
 
-header h1 {
+header h1, header h2 {
+    font-family: 'Lexend Mega', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
     position: relative;
     top: 25%;
 }
 
 header h2 {
-    position: relative;
     top: 30%;
 }
 
 h1 {
-    color: white;
-    font-family: 'Quicksand', sans-serif;
     font-size: 70px;
     font-weight: 400;
     line-height: 60px;
@@ -35,35 +35,48 @@ h1 {
 }
 
 h2 {
-    color: white;
-    font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     font-weight: 300;
     line-height: 60px;
     margin: 0;
 }
 
-ul {
-    list-style-type: none;
+nav {
+    border-top: 2px solid grey;
+    border-bottom: 0 none;
+    margin: 0 80px;
+}
+
+a {
+    text-decoration: none; /* removes underlines */
+}
+
+nav ul {
+    display: table;
     margin: 0;
     padding: 0;
-    width: 150px;
-    background-color: #f1f1f1;
+    width: 500px;
     border-radius: 10px;
-    overflow: hidden;  /* allows border radius to affect child elements*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav li {
+    display: table-cell
 }
 
 li a {
     display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none; /* removes underlines */
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    width: 130px;
 }
 
 /* Change the link color on hover */
 li a:hover {
-    background-color: #555;
-    color: white;
+    color: gainsboro;
 }
 
 footer {
