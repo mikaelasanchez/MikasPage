@@ -4,32 +4,79 @@
     <meta charset="UTF-8">
     <title>Mika's Page - Main</title>
     <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/> <!-- 'monolith' theme -->
+    <!-- Can also use nano and classic -->
 </head>
-<body>
+<body onload="initialise()">
     <header>
+        <div class="black-frosted-glass"></div>
         <h1>Mikaela Sanchez</h1>
         <h2>Personal Website</h2>
-        <nav>
-            <ul>
-                <li><a href="./resume.html" target="_blank">Resume</a></li>
-                <li><a href="./randomColours.html" target="_blank">Random Colours</a></li>
-                <li><a href="./fashionblog.html" target="_blank">Fake Fashion Blog</a></li>
-            </ul>
-        </nav>
     </header>
-    
-    <!-- <main>
-        <h3>Dog Barking Audio</h3>
+    <nav>
+        <ul>
+            <li><a href="./resume.html" target="_blank">Resume</a></li>
+            <li><a href="./randomColours.html" target="_blank">Random Colours</a></li>
+            <li><a href="./fashionblog.html" target="_blank">Fake Fashion Blog</a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <main>
+        <section id="leaderboard-tool">
+            <h2>Custom Leaderboard</h2>
+            <div id="settings" style="float: left; margin-right: 50px;">
+                <h3>Colour Pickers</h3>
+                <div class="pickr-container">
+                    <div id="board-colour"></div>
+                </div>
+                <br>
+                <div class="pickr-container">
+                    <div id="entry-colour"></div>
+                </div>
+                <h3>Generated Code</h3>
+                <textarea id="leaderboard-code"></textarea>
+            </div>
+
+            <div id="leaderboard" style="float: left; margin-right: 50px;">
+                <h3>Leaderboard</h3>
+                <div id="leaderboard-graphic">
+                    <div id="leaderboard-players" style="text-align: justify;">
+                    </div>
+                </div>
+            </div>
+
+            <div id="leaderboard-controls" style="float: left;">
+                <h3>Add player</h3>
+                <button class="leaderboard-button" onclick="addPlayer()">+</button> 
+                <input id="username" type="text" size="10" placeholder="username">
+                <input id="score" type="text" size="3" placeholder="score">
+                <p id="exceeded-players" style="color:red; visibility: hidden;">Exceeding max number of players</p>
+
+                <br>
+                <h3>Instructions:</h3>
+                <ol class="instructions">
+                    <li>Choose your leaderboard colours using the colour pickers <em>(make sure to click save!)</em></li>
+                    <li>Experiment by adding players with the above tool</li>
+                    <li>Copy and paste the generated code in the body of your html document</li>
+                    <li>Call <span style="font-family:'Courier New', Courier, monospace; font-size: 15px;">addPlayer(username, score)</span></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- <h3>Dog Barking Audio</h3>
         <audio autoplay controls>
             <source src="https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3" type="audio/mp3">
-        </audio>
-    </main> -->
+        </audio> -->
+    </main>
+
+    <div style="clear:both;"></div>
 
     <!-- <a href="#main">Main</a> -->
-    
     <footer>
         <small>Copyright 2021 Mikaela Sanchez</small>
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script src="resources/javascript/index.js"></script>
     </body>
 </html>

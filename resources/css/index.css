@@ -5,46 +5,76 @@
 body {
     background-color: #363739;
     margin: 0;
-    padding: 25px 50px;
+    padding: 25px 25px 100px;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+}
+
+main {
+    padding: 0 10% 10%;
 }
 
 header {
+    background-image: url("../img/babysbreath.jpg"); /* Photo by wagamama.008/akko from Pexels */
+    background-position: 50% 10%;
+    background-size: cover;
+    border-radius: 5px;
     padding: 10px 10px 80px;
     width: 100%;
-    text-align: center;
+    height: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
 }
 
 header h1, header h2 {
     font-family: 'Lexend Mega', sans-serif;
-    text-shadow: 2px 2px 4px #000000;
-    position: relative;
-    top: 25%;
+    text-shadow: 5px 5px 10px #000000;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    transform: translateX(-12px);
 }
 
-header h2 {
-    top: 30%;
+.black-frosted-glass {
+    background: rgba( 0, 0, 0, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 820px;
+    height: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    position: absolute;
 }
 
 h1 {
     font-size: 70px;
     font-weight: 400;
     line-height: 60px;
-    margin: 0;
+    bottom: 40px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 300;
     line-height: 60px;
-    margin: 0;
+    bottom: 0;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 18px;
 }
 
 nav {
-    border-top: 2px solid grey;
-    border-bottom: 0 none;
-    margin: 0 80px;
+    /* border-top: 2px solid grey;
+    border-bottom: 0 none; */
+    width: 100%;
+    transform: translateX(25px);
 }
 
 a {
@@ -79,8 +109,111 @@ li a:hover {
     color: gainsboro;
 }
 
-footer {
+.pickr-container {
+    border-style: solid;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 2px;
+    width: 20px;
+    height: 20px;
+    padding-bottom: 10px;
+    padding-right: 8px;
+    padding-left: 1.5px;
+    
+    overflow: hidden;
+    z-index: 100;
+}
+
+
+#leaderboard-graphic {
+    width: 250px;
+    height: 320px;
+    background-color: #50657E;
+    border-radius: 5px;
     position: relative;
-    bottom: 0;
+}
+
+#leaderboard-players {
+    padding: 0 10px;
+    width: 210px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* border: solid black; */
+    position: absolute;
+}
+
+#leaderboard-code {
+    width: 210px;
+    height: 150px;
+    font-size: 11px;
+}
+
+/* #leaderboard-controls {
+} */
+
+.leaderboard-button {
+    border-radius: 50%;
+    font-weight: bold;
+    background-color: #50657E;
+    border-style: hidden;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.leaderboard-player {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.644);
+    border-radius: 5px;
+    width: 83%;
+    margin: 10px 0;
+    display: table;
+    list-style-type: none;
+    table-layout: fixed;
+}
+
+.leaderboard-player li {
+    padding: 0 5px;
+    width: 100%;
+    display: table-cell;
+    /* border: solid black; */
+}
+
+.leaderboard-rank div{
+    height: 10px;
+    width: 10px;
+    border: 1px solid black ;
+    border-radius: 50%;
+}
+
+.leaderboard-rank{
+    text-align: left;
+    transform: translate(-70%, 5%);
+}
+
+.leaderboard-user {
+    text-align: left;
+    transform: translate(-140%);
+}
+
+.leaderboard-score {
+    text-align: right;
+}
+
+.instructions {
+    width: 250px;
+    padding-left: 0;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
     text-align: center;
+    bottom: 5px;
 }
