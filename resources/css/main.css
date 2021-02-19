@@ -65,17 +65,6 @@ h2 {
     bottom: 0;
 }
 
-h3 {
-    font-weight: normal;
-    font-size: 18px;
-}
-
-nav {
-    /* border-top: 2px solid grey;
-    border-bottom: 0 none; */
-    width: 100%;
-}
-
 a {
     text-decoration: none; /* removes underlines */
 }
@@ -87,8 +76,6 @@ nav ul {
     width: 500px;
     border-radius: 10px;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 nav li {

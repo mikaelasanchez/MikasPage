@@ -1,0 +1,47 @@
+
+body {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 60px; 
+    font-family: 'Lexend Mega', sans-serif; text-align: center;
+    background: rgb(51,58,171);
+    background: linear-gradient(90deg, rgba(51,58,171,1) 0%, rgba(157,24,172,1) 56%, rgba(120,14,3,1) 94%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0);
+    margin: 50px 0 0;
+}
+
+h4 {
+    font-size: 40px;
+    font-family: 'Lexend Mega', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+}
+
+h5 {
+    font-size: 28px;
+    font-weight: lighter;
+    text-align: left;
+    margin: 0;
+}
+
+#courses {
+    text-align: right;
+}
+
+article {
+    margin-top: 100px;
+}
+
+.icon {
+    background: white;
+    border-radius: 50%;
+    padding: 2px;
+    height: 20px;
+    width: 20px;
+    transform: translateY(5px);
+}
