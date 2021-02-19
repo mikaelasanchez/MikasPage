@@ -60,10 +60,13 @@ boardPickr.on('change', (color, instance) => {
     for (var button = 0; button < buttons.length; button++ ){
         buttons[button].style.backgroundColor = color.toRGBA().toString();
     }
+    
+    generateCode();
 })
 
 entryPickr.on('change', (color, instance) => {
     changeEntryColour(color, instance)
+    generateCode();
 });
 
 function changeEntryColour(color, instance) {
@@ -143,8 +146,6 @@ function addPlayer(username = "Anon", score = "100"){
 function generateCode(){
     var boardColour = boardPickr.getSelectedColor().toRGBA().toString();
     var entryColour = entryPickr.getSelectedColor().toRGBA().toString();
-
-    console.log(boardColour);
 
     var code = `<div id="leaderboard" style="float: left; margin-right: 50px;">
         <div id="leaderboard-graphic">
