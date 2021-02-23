@@ -54,7 +54,7 @@
                 <h3>Add player</h3>
                 <button class="leaderboard-button" onclick="addPlayer()">+</button> 
                 <input id="username" type="text" size="10" placeholder="username">
-                <input id="score" type="text" size="3" placeholder="score">
+                <input id="score" type="number" min="0" max="10000" step="10" placeholder="score">
                 <p id="exceeded-players" style="color:red; visibility: hidden;">Exceeding max number of players</p>
 
                 <br>
