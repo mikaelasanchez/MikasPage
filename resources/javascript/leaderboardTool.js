@@ -57,8 +57,8 @@ boardPickr.on('change', (color, instance) => {
     leaderboard.style.backgroundColor = color.toRGBA().toString();
 
     /* Change colour of buttons and leaderboard */
-    for (var button = 0; button < buttons.length; button++ ){
-        buttons[button].style.backgroundColor = color.toRGBA().toString();
+    for (let button of buttons){
+        button.style.backgroundColor = color.toRGBA().toString();
     }
     
     generateCode();
@@ -74,8 +74,8 @@ function changeEntryColour(color, instance) {
     var entries = leaderboard.childNodes;
 
     /* Change colour of buttons and leaderboard */
-    for (var entry = 0; entry < entries.length; entry++ ){
-        entries[entry].style.backgroundColor = color.toRGBA().toString();
+    for (let entry of entries){
+        entry.style.backgroundColor = color.toRGBA().toString();
     }
 }
 
@@ -101,13 +101,13 @@ function addPlayer(username = "Anon", score = "100"){
         return b[1] - a[1]
     });
 
-    for (var player = 0; player < players.length; player++){  /* Update scores */
+    for (let player of players){  /* Update scores */
         var userEntry = document.createElement("ul");
         userEntry.className = "leaderboard-player";
 
         /* Checks if textboxes are empty and if not, get their values and create username and score element */
-        var userNode = document.createTextNode(players[player][0]);
-        var scoreNode = document.createTextNode(players[player][1]);
+        var userNode = document.createTextNode(player[0]);
+        var scoreNode = document.createTextNode(player[1]);
         var userEl = document.createElement("li");
         var scoreEl = document.createElement("li");
 
@@ -237,13 +237,13 @@ function generateCode(){
                 return b[1] - a[1]
             });
         
-            for (var player = 0; player < players.length; player++){  /* Update scores */
+            for (let player of players){  /* Update scores */
                 var userEntry = document.createElement("ul");
                 userEntry.className = "leaderboard-player";
         
                 /* Checks if textboxes are empty and if not, get their values and create username and score element */
-                var userNode = document.createTextNode(players[player][0]);
-                var scoreNode = document.createTextNode(players[player][1]);
+                var userNode = document.createTextNode(player[0]);
+                var scoreNode = document.createTextNode(player[1]);
                 var userEl = document.createElement("li");
                 var scoreEl = document.createElement("li");
         
